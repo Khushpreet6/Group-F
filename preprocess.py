@@ -90,7 +90,7 @@ def preprocess_csv(csv_file_name, processed_file_name, test_file=False):
                                    (tweet_id, processed_tweet))
             write_status(i + 1, total)
     save_to_file.close()
-    print('\nSaved processed tweets to: %s' % processed_file_name)
+    print("\nSaved processed tweets to: %s' % processed_file_name")
     return processed_file_name
 
 
