@@ -46,7 +46,7 @@ def get_bigram_freqdist(bigrams):
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print 'Usage: python stats.py <preprocessed-CSV>'
+        print ("Usage: python stats.py <preprocessed-CSV>")
         exit()
     num_tweets, num_pos_tweets, num_neg_tweets = 0, 0, 0
     num_mentions, max_mentions = 0, 0
