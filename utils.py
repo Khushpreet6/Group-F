@@ -3,10 +3,10 @@ import pickle
 import random
 
 
-def File_to_wordset(Filename):
+def file_to_wordset(filename):
     ''' Converts a file with a word per line to a Python set '''
     words = []
-    with open(Filename, 'r') as f:
+    with open(filename, 'r') as f:
         for line in f:
             words.append(line.strip())
     return set(words)
@@ -42,8 +42,8 @@ def top_n_words(pkl_file_name, N, shift=0):
     Returns:
         dict: Of form {word:rank}
     """
-    with open(pkl_File_name, 'rb') as pkl_File:
-        freq_dist = pickle.load(pkl_File)
+    with open(pkl_file_name, 'rb') as pkl_file:
+        freq_dist = pickle.load(pkl_file)
     most_common = freq_dist.most_common(N)
     words = {p[0]: i + shift for i, p in enumerate(most_common)}
     return words
