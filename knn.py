@@ -5,7 +5,7 @@ from sklearn.naive_bayes import MultinomialNB
 from scipy.sparse import lil_matrix
 from sklearn.feature_extraction.text import TfidfTransformer
 import sys
-import pickle
+import Pickel
 import random
 
 
